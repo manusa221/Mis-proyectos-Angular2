@@ -1,0 +1,15 @@
+<!-- hacemos una interpolación con title -->
+<h1>{{title}}</h1>
+<div class="bg-body border p-3 d-inline-block">
+  
+
+<form>
+  <!-- para hacer una conexión bidireccional hacemos un box banana y le pasamos la variable y le damos un name, para que aparezca el 0 en la casilla -->
+  Numero 1: <input type="text" [(ngModel)]="numero1" name="numero1"><br/><br/>
+  Numero 2: <input type="text" [(ngModel)]="numero2" name="numero2"><br/><br/>
+  <input type="submit" value="Sumar" (click)="sumar()"  > 
+  <input type="submit" value="restar" (click)="restar()" class="btn btn-primary" > 
+</form>
+</div><
+<!-- añadimos un parrafo que aparecerá el resultado por interpolación -->
+<p>Resultado: {{resultado}}</p>
